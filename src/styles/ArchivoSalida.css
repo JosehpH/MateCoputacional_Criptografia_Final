@@ -1,0 +1,25 @@
+.cont_btnDescarga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+            width: 30vh;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E5383B;
+            border-radius: 20px;
+            cursor: pointer;
+            color: #FFFFFF;
+            margin-left: 30px;
+            font-size: 2vh;
+            margin-right: 100px;
+}
+.btnDescarga{
+    width: fit-content;
+    height: fit-content;
+}
+.cont_btnDescarga:hover{
+    scale: 1.2;
+}

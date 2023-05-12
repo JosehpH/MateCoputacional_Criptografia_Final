@@ -1,0 +1,46 @@
+.contenedorIntegrante {
+    width: 1000px;
+    height: 368px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 4px 0px 3px grey;
+    border-radius: 40px;
+}
+
+.imagenIntegrante {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+        height: 200px;
+        width: 200px;
+        /* los siguientes valores son independientes del tamaño del círculo */
+        border-radius: 50%;
+       
+}
+
+.contenedorTexto {
+    text-align: center;
+    padding: 40px;
+    font-size: 18ox;
+    font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.nombre-integrante,
+.carrera-integrante {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding-bottom: 30px;
+
+}
+
+.texto-integrante {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.Miembros {
+    margin-top: 0;
+}

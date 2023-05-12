@@ -1,0 +1,80 @@
+
+.Proyecto{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+h2{
+    text-align:center ;
+}
+p{
+    text-align: center;
+}
+hr{
+    width: 90%;
+    color: red;
+}
+.Ingreso_Texto{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+align-items: center;
+}
+.Textarea_Texto{
+    margin-top: 20px;
+}
+.TextArea{
+    width: 900px;
+    resize: none;
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+    border :none;
+    outline: none;
+}
+.textarea::-webkit-scrollbar{
+    width: 8px;
+}
+.textarea::-webkit-scrollbar-thumb {
+    background:black;
+}
+.textarea::-webkit-scrollbar-thumb:hover {
+    background: grey;   
+    cursor:pointer;
+}
+/*Boton de ingresar texto*/
+.btn_IngresarTexto{
+    display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: medium;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        background-color: #0B090A;
+            color: #FFFFFF;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+}
+.btn_IngresarTexto:hover{
+    background-color: #E5383B;
+    color: #FFFFFF;
+    
+
+}
+/*input file*/
+#archivo{
+    display: none;
+} 
+.labelInputFile{
+    display: block;
+    padding: 8px 21px;
+    border-radius: 6px;
+    background-color: #eee;
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+.cont_encr_generarClaves{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   
+}
+
+.EncriptacionRSA{
+    margin-left: 30px;
+    min-height: 100px;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-right: 2px solid black;
+}
+.input_texto{
+width: 25vh;
+height: 5vh;
+outline: none;
+border:none;
+font-size: larger;
+margin-top: 10px;
+text-align: center;
+background-color: transparent;
+border-bottom: 2px solid black;
+}
+.btn_encriptarRSA{
+    margin-top: 20px;
+    width: 40vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B090A;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-left: 30px;
+    font-size: 3vh;
+
+}
+.TextAreaResultado{
+    width: 600px;
+    resize: none;
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    background-color:rgba(23,32,42, .1);
+}
+.error{
+    color:red;
+}
+.correcto{
+    color:green;
+}

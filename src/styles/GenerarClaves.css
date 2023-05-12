@@ -1,0 +1,32 @@
+.cont_generarClaves{
+    margin-left: 10px;
+}
+.input_number{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black ;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: medium;
+}
+.btn_Accion2{
+
+    width: 20vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0B090A;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #FFFFFF;
+        margin-left: 30px;
+        font-size: 2vh;
+}
+.btn_Accion2:hover{
+    background-color: #E5383B;
+}

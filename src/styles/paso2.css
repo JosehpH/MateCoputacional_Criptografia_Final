@@ -1,0 +1,27 @@
+.SeleccionarAccion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+.btn_Accion{
+    width: 40vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B090A;
+    border-radius: 20px;
+    cursor: pointer;
+    color:#FFFFFF;
+    margin-left: 30px;
+    font-size: 3vh;
+}
+.btn_Accion:hover{
+    background-color: #E5383B;
+}
+.btn_Accion.marcado{
+background-color: #E5383B;
+}
