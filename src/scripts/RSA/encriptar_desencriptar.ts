@@ -1,21 +1,34 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 /* eslint-disable prefer-const */
 import Big from "big.js"
-import Clave from "../../shared/Clave";
+import Clave from "./Clave";
 export function residuo(n: number, expo: number, mod: number):number {
-     const _n = Big(n.toString());
+    const _n = Big(n.toString());
      let resultado = _n.pow(expo);
      resultado = resultado.mod(mod);
      return resultado.toNumber();
 }
-export function Procesar(clavePublica:Clave,texto:string):string {
-    let valoresNumericos: number[] = [...texto].map((letra) => { return letra.charCodeAt(0); })
-    let textoEncriptado: string = "";
-    for (let i = 0; i < valoresNumericos.length; i++) {
-        let valor: number = valoresNumericos[i];
-        let nuevoValor: number = residuo(valor,clavePublica.x,clavePublica.n);
-        textoEncriptado += String.fromCharCode(nuevoValor);
+function obtenerValoresNumericos(texto:string):string[] {
+  let valoresNumericos:string[] = [];
+  for (let i = 0; i < texto.length; i++) {
+    let valorUnicode = texto.charCodeAt(i);
+      valoresNumericos.push(valorUnicode.toString(16));
+      console.log(valorUnicode.toString(16));
     }
-    return textoEncriptado;
+  return valoresNumericos;
+}
+function convertirNumeros_Texto(clave:Clave,bloquesNumericos:string[]) {
+  let texto:string = "";
+  for (let i = 0; i < bloquesNumericos.length; i++) {
+      let valorUnicode = parseInt(bloquesNumericos[i], 16);
+      valorUnicode = residuo(valorUnicode, clave.x, clave.n);
+        texto += String.fromCharCode(valorUnicode);
+    }
+  return texto;
+}
+export function Procesar(clave:Clave,texto:string):string {
+    let valoresNumericos: string[] = obtenerValoresNumericos(texto);
+    let textoProcesado: string = convertirNumeros_Texto(clave,valoresNumericos);
+    return textoProcesado;
 }
 export default Procesar;

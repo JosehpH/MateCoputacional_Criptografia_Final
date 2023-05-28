@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "../../styles/GenerarClaves.css";
-import obtenerNumeroPrimoAleatorio from "../../shared/numerosPrimosAleatorios";
-import obtenerClaves from "../../shared/obtenerClaves";
+import obtenerNumeroPrimoAleatorio from "../../scripts/RSA/numerosPrimosAleatorios";
+import obtenerClaves from "../../scripts/RSA/obtenerClaves";
+
 function GenerarClaves() {
   let pValor: number;
   let qValor: number;

@@ -23,12 +23,6 @@ const Paso3_ElegirAlgoritmo = ({tipoAlgoritmo,setAlgoritmo}) => {
         >
           Algoritmo RSA
         </div>
-        <div
-          className={tipoAlgoritmo != 1 ? btnBase : btnBase + marcado}
-          onClick={() => elegirAlgoritmo(1)}
-        >
-          Algoritmo AES
-        </div>
       </div>
       <hr />
     </>

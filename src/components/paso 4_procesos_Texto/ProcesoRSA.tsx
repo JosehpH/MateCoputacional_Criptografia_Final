@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Clave from "../../shared/Clave";
+import Clave from "../../scripts/RSA/Clave";
 import  Procesar   from "../../scripts/RSA/encriptar_desencriptar";
 
 import '../../styles/RSA.css'

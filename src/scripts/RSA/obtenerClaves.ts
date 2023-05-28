@@ -10,25 +10,33 @@ function hallarD(funcionEuler: number) {
   const posiblesValores: number[] = [];
   let d: number = funcionEuler - 1;
 
-  for (let i = d; i >= 2; i--) {
+  for (let i = 2; i <= d; i++) {
     if (maximoComunDivisorEuclides(i,funcionEuler)==1) {
       posiblesValores.push(i);
     }
   }
-  d = posiblesValores[Math.round(Math.random() * posiblesValores.length)];
+  d = posiblesValores[Math.floor(Math.random() * posiblesValores.length)];
   return d;
 }
 
 function hallarE(d: number, funcion_euler: number) {
   let e: number = 1;
-  let i: number = 2;
-  while (1<2){
-    if ((d * i) % funcion_euler == 1 && d*i>funcion_euler) {
-      e = (i > funcion_euler) ? i % funcion_euler : i;
-      return e;
-    }
-    i++
+  let i: number = 1;
+
+  // d * e =  1 mod funcion_euler
+  // paso 1: ----
+  //Hallar un número que multiplicado con d sea multiplo de funcion_euler + 1
+
+  let cumple = false;
+  while (!cumple) {
+    i++;
+    cumple = (d * i - 1) % funcion_euler == 0 && d * i >= funcion_euler;
   }
+
+  // paso 2: ----
+  //En cado de que i sea mayor a funcion_euler se retornará el resto
+  e = i >= funcion_euler ? i % funcion_euler : i;
+  return e;
 }
 
 function obtenerClaves(p: number, q: number) {
@@ -40,14 +48,11 @@ function obtenerClaves(p: number, q: number) {
   const funcion_euler: number = (p - 1) * (q - 1);
 
   //paso 3.1: obtener d
-  let d: number = hallarD(funcion_euler);
+  const d: number = hallarD(funcion_euler);
 
   //paso 4: obtener e
-  let e: number = hallarE(d, funcion_euler);
-  while (d == e) {
-    d = hallarD(funcion_euler);
-    e = hallarE(d, funcion_euler);
-  }
+  const e: number = hallarE(d, funcion_euler);
+
   return {
     clavePrivada: { n: n, e: e },
     clavePublica: { n: n, d: d },

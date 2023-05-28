@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 import "../styles/paso4.css";
 import ProcesoRSA from "./paso 4_procesos_Texto/ProcesoRSA";
+
 const Paso4_ProcesarSolicitud = ({ tipoProceso, tipoAlgoritmo, texto }) => {
   const Proceso = (): JSX.Element => {
     console.log("Proceso: ", tipoProceso, " Algoritmo: ", tipoAlgoritmo);
