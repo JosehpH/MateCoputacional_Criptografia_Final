@@ -1,5 +1,4 @@
 import '../styles/paso2.css'
-import { useState } from "react";
 
 const Paso2_ElegirDesenEnc = ({tipoProceso,setProceso}) => {
   const elegirProceso = (n:number) => {

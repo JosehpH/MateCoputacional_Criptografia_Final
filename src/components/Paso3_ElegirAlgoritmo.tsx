@@ -1,5 +1,4 @@
 import "../styles/paso2.css";
-import { useState } from "react";
 
 const Paso3_ElegirAlgoritmo = ({tipoAlgoritmo,setAlgoritmo}) => {
 
