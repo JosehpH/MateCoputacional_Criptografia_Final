@@ -3,6 +3,7 @@ body{
     background-color: #B1A7A6;
     box-sizing: border-box;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 *{
         font-family: 'Poppins', sans-serif;

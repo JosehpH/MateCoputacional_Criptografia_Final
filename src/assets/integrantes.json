@@ -1,0 +1,38 @@
+[
+	{
+		"nombres" : "Anthony Brahan",
+		"apellidos" : "Loarte Matos",
+		"descripcion" : "Soy estudiante de la Universidad Peruana de Ciencias Aplicadas, actualmente estoy cursando el cuarto ciclo de la carrera de Ingeniería de Software. Me apasiona todo lo relacionado a tecnología, los avances tecnológicos y los procesos de arquitectura para el desarrollo de software. Asimismo, cuento con la capacidad para  innovar en el diseño y desarrollo de proyectos.",
+  	"carrera" : "Ingeniera de Sotware ",
+  	"url_foto" : "https://i.postimg.cc/8Cmp3ppY/me2-0-2.png"
+  },
+  {
+	  "nombres" : "Randy Becker",
+  	"apellidos" : "Rengifo Mirabal",
+  	"descripcion" : "En el momento presente me encuentro cursando el cuarto ciclo de la carrera de ingeniería de software en la universidad peruana de ciencias aplicadas. Cuanto con conocimientos básicos en C + + y HTML. Me considero una persona proactiva, perseverante, responsable y sobre todo divertido :D. Mis pasatiempos favoritos son escuchar música, jugar videojuegos o algún deporte como el fútbol.",
+  	"carrera" : "Ingeniería de Software",
+  	"url_foto" : "https://i.postimg.cc/C5v46Kzy/Captura-de-pantalla-2023-04-06-012332.png"
+},
+{
+  "nombres" : "Josehp Piero",
+  "apellidos" : "Herrera Del Pino",
+  "descripcion" : "Actualmente me encuentro cursando el cuarto ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Cuento con conocimientos básicos-intermedios en C + +, HTML, CSS, Javascript, Python, Matlab, Excel, React js, Nest js, Sqlite3, Mysql, Typescript, Git y Java. Mis pasatiempos son jugar videojuegos, fútbol, ver series, realizar ciclismo, leer ,etc",
+  "carrera" : "Ingeniería de Software",
+  "url_foto" : "https://i.postimg.cc/9ML3BLF4/foto.jpg"
+},
+  {
+  	"nombres" : "Bruce Andres",
+  	"apellidos" : "Cipriano Chumbes",
+  	"descripcion" : "En este momento me encuentro cursando el cuarto ciclo de la carrera de ingenieria de software en la universidad peruana de ciencais aplicadas. Donde presento con conocimientos basicos de c++, python y HTML. Me considero una persona activa en las tareas a cumplir y responble. Mis pasatiempo favoritos son jugar ajedrez, ver peliculas sobre acción y aventuras",
+  	"carrera" : "Ingeniería de Software",
+  	"url_foto" : "https://i.postimg.cc/tgHGJFwy/foto-carnet-1.jpg"
+  },
+  {
+  	"nombres" : "Fiorella Angela",
+  	"apellidos" : "Vilca Valverde",
+  	"descripcion" : "Actualmente estoy cursando el cuarto ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (U.P.C). Cuento con conociemtos basicos programacion de C++ y Python. Me considero una persona muy perserverante y responsable.En mis tiempos libres me gusta leer y ver series.",
+  	"carrera" : "Ingenieria de Software",
+  	"url_foto" : "https://i.postimg.cc/wTf3Nd5D/foto-para-blackboard.jpg"
+  }
+]
+    

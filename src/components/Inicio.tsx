@@ -25,8 +25,8 @@ function Inicio() {
 function efectoNieve() {
   const canvas:any = document.querySelector("canvas");
 
-  canvas.width = innerWidth-50;
-  canvas.height = innerHeight - 150;
+  canvas.width = innerWidth;
+  canvas.height = innerHeight - 100;
   canvas.style.position = "absolute";
   canvas.style.top = "100px";
   canvas.style.left = "0";

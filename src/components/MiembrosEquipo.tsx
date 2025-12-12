@@ -1,4 +1,4 @@
-import data from '../../public/integrantes.json'
+import data from '../assets/integrantes.json'
 import '../styles/MiembrosEquipo.css'
 function Integrante(props: any) {
    const integrante = (

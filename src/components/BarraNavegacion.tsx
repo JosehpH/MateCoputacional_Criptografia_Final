@@ -1,4 +1,4 @@
-import logo from "../../public/upcLogo.png";
+import logo from "../assets/upcLogo.png";
 import "../styles/BarraNavegacion.css";
 
 function BarraNavegacion({ pos, setPos }: any) {
@@ -20,11 +20,15 @@ function BarraNavegacion({ pos, setPos }: any) {
       </div>
     );
   };
-  
+  const toggleMenu = () => {
+    const barra = document.querySelector('.nav-links');
+    barra?.classList.toggle('show');
+  }
   return (
     <div className="barraNavegacion">
       <img src={logo} alt="logoUpc" className="logo" />
 
+    <div className="nav-links">
       <BotonNavegacion posicionBoton={1}>
         <span className="material-symbols-outlined">home</span> Inicio
       </BotonNavegacion>
@@ -37,6 +41,10 @@ function BarraNavegacion({ pos, setPos }: any) {
         <span className="material-symbols-outlined">groups</span> Miembros del
         equipo
       </BotonNavegacion>
+      </div>
+      <div className="hamburguer" onClick={toggleMenu}>
+        ☰
+      </div>
     </div>
   );
 }

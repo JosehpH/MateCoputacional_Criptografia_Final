@@ -53,6 +53,9 @@ border-bottom: 2px solid black;
     font-family: 'Poppins', sans-serif;
     border: none;
     outline: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 10px;
     background-color:rgba(23,32,42, .1);
 }
 .error{
